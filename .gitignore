@@ -1,0 +1,54 @@
+# Node modules
+node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# dotenv environment variables
+.env
+.env.local
+.env.*.local
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage from testing tools
+coverage/
+
+# Build artifacts
+dist/
+build/
+.out/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache
+.npm/
+
+# VSCode settings
+.vscode/
+
+# PM2 logs
+pids/
+*.pid
+*.seed
+
+# Debug logs
+debug.log
+
+# IDE folders
+.idea/
+
+# Next.js
+.next/
+
+# Others (optional)
+*.tgz
+*.swp
+*.swo
