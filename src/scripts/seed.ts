@@ -1,7 +1,7 @@
 // scripts/seed.ts
 import dotenv from "dotenv";
-import { connectDB } from "../src/config/db";
-import Category from "../src/models/Category";
+import { connectDB } from "../config/db";
+import Category from "../models/Category";
 
 dotenv.config();
 
