@@ -1,8 +1,3 @@
-Here’s a polished and professional `README.md` for your **Car Dealership API** project, perfectly tailored for submission:
-
----
-
-```md
 # 🚗 Car Dealership API
 
 A RESTful API for managing cars, categories, customers, and managers for a car dealership system. Built with **Node.js**, **Express**, **TypeScript**, and **MongoDB**.
@@ -35,6 +30,7 @@ A RESTful API for managing cars, categories, customers, and managers for a car d
 ---
 
 ## 📁 Project Structure
+
 ```
 
 src/
@@ -49,7 +45,7 @@ src/
 ├── validations/
 └── server.ts
 
-````
+```
 
 ---
 
@@ -58,9 +54,12 @@ src/
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/your-username/car-dealership-api.git
+mkdir car-dealership-api
 cd car-dealership-api
-````
+npm init -y
+npm install --save-dev typescript
+npx tsc --init
+```
 
 ### 2. Install Dependencies
 
@@ -84,7 +83,7 @@ npm run dev
 
 ---
 
-## 🧪 Run Tests
+## Run Tests
 
 ```bash
 npm run test
@@ -109,11 +108,9 @@ All protected routes require a Bearer token in the header:
 Authorization: Bearer <JWT_TOKEN>
 ```
 
-Get a token by logging in via `/api/auth/login`.
-
 ---
 
-## 🔍 Endpoints Overview
+## Endpoints Overview
 
 ### Auth
 
@@ -137,41 +134,19 @@ Get a token by logging in via `/api/auth/login`.
 
 ---
 
-## 🧪 Postman
-
-Import the Postman collection: [`Car Dealership.postman_collection.json`](#)
-(Include this file in your submission)
-
----
-
-## 🌐 Deployment (Optional)
-
-Live API URL: [https://car-api.onrender.com](https://car-api.onrender.com) _(example)_
-MongoDB hosted on [MongoDB Atlas](https://www.mongodb.com/cloud/atlas)
-
----
-
-## ✍️ Author
+## Author
 
 **Samuel Igbekele**
 Backend Developer • TypeScript • Node.js • MongoDB
 
 ---
 
-## 📤 Submission Links
+## Submission Links
 
-- 🔗 GitHub Repo: [https://github.com/your-username/car-dealership-api](#)
-- 🔗 Postman Docs: [https://documenter.getpostman.com/view/...](#)
-- 🔗 Live API: [https://car-api.onrender.com](#)
+- 🔗 GitHub Repo: [https://github.com/XKolz/car-dealership-api](#)
+- 🔗 Postman Docs: [https://documenter.getpostman.com/view/23652017/2sB2qgdxrD](#)
+- 🔗 Live API: [https://car-dealership-api-wvxy.onrender.com](#)
 
 ```
 
----
-
-Let me know if you'd like:
-- A `.env.example` file
-- Help customizing the live links
-- Assistance deploying it to Render or Railway
-
-You're fully ready to submit this. Let’s wrap it up professionally.
 ```
