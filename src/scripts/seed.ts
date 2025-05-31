@@ -13,21 +13,24 @@ const categories = [
   { name: "Convertible" },
 ];
 
-const seed = async () => {
+export const seed = async () => {
   try {
     await connectDB();
 
-    await Category.deleteMany({});
-    console.log("🧹 Cleared existing categories");
+    const existing = await Category.countDocuments();
+    if (existing > 0) {
+      console.log("Categories already exist. Skipping seeding.");
+      return;
+    }
 
     const result = await Category.insertMany(categories);
-    console.log("✅ Seeded categories:", result);
-
-    process.exit(0);
+    console.log("Seeded categories:", result);
   } catch (err) {
-    console.error("❌ Seeding error:", err);
-    process.exit(1);
+    console.error("Seeding error:", err);
   }
 };
 
-seed();
+// Only run when executed directly
+if (require.main === module) {
+  seed().then(() => process.exit(0));
+}
